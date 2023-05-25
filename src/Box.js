@@ -1,16 +1,20 @@
 import React from 'react';
 
-const Box = ({width='100px', height='100px', backgroundColor='red'}) => {
+const Box = ({id, width='100px', height='100px', backgroundColor='red', removeBox}) => {
   const myStyles = {
-    width,
-    height,
+    width:`${width}px`,
+    height:`${height}px`,
     backgroundColor,
+    border: "1px solid black",
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center"
   }
 
 
   return (
     <div style={myStyles}>
-      <h3>Box</h3>
+      <button onClick={()=>removeBox(id)}>X</button>
     </div>
   )
 }

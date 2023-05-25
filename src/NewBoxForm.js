@@ -24,7 +24,7 @@ const NewBoxForm = ({ addBox }) => {
       <label htmlFor="height">Height:</label>
       <input
         type="number"
-        min={0} // Set the minimum value
+        min={50} // Set the minimum value
         max={250} // Set the maximum value
         id="height"
         name="height"
@@ -34,7 +34,7 @@ const NewBoxForm = ({ addBox }) => {
       <label htmlFor="width">width:</label>
       <input
         type="number"
-        min={0} // Set the minimum value
+        min={50} // Set the minimum value
         max={250} // Set the maximum value
         id="width"
         name="width"
