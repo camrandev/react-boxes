@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Box from "./Box.js"
 
 const BoxList = () => {
-  const [ , ] = useState( );
+  const [,] = useState();
 
   return (
     <div>
-      <h3>BoxList</h3>
+      <h3>NewBoxForm</h3>
+      <Box />
     </div>
-  )
-}
+  );
+};
 
 export default BoxList;
